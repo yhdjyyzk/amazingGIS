@@ -1,5 +1,8 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <button class="change-style" @click="onClickChangeStyle">change style</button>
+    <div ref="map" class="map" @click="onClickMap"></div>
+  </div>
 </template>
 
 <script>
@@ -11,7 +14,7 @@ export default {
   components: {},
   mounted() {
     const map = new mapboxgl.Map({
-      container: "app",
+      container: this.$refs.map,
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
       zoom: 16, // starting zoom
       style: {
@@ -30,9 +33,7 @@ export default {
       },
     });
 
-    map.on("click", (e) => {
-      console.log(e);
-    });
+    this.$map = map;
 
     map.on("load", function () {
       // --------- 背景 -----------
@@ -293,6 +294,25 @@ export default {
       //   });
     });
   },
+  methods: {
+    onClickMap(e) {
+      const objs = this.$map.queryRenderedFeatures([
+        [e.offsetX - 5, e.offsetY - 5],
+        [e.offsetX + 5, e.offsetY + 5],
+      ]);
+      console.log(objs);
+    },
+    onClickChangeStyle() {
+      const style = this.$map.getStyle();
+
+      const naturalWater = style.layers.find(
+        (layer) => layer.id === "natural-water"
+      );
+      naturalWater.paint["fill-color"] = "#ffff00";
+
+      this.$map.setStyle(style);
+    },
+  },
 };
 </script>
 
@@ -302,5 +322,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+}
+
+.map {
+  height: 100%;
+}
+
+.change-style {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
 }
 </style>
