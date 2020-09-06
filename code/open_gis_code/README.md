@@ -1,4 +1,4 @@
-# geoserver_learn
+# open_gis_code
 
 ## Project setup
 ```
