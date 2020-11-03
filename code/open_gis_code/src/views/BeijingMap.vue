@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <button class="change-style" @click="onClickChangeStyle">change style</button>
+    <button class="change-style" @click="onClickChangeStyle">
+      change style
+    </button>
     <div ref="map" class="map" @click="onClickMap"></div>
   </div>
 </template>
@@ -25,7 +27,8 @@ export default {
             type: 'vector',
             scheme: 'tms',
             tiles: [
-              'http://localhost/geoserver/gwc/service/tms/1.0.0/beijing_test%3Abeijing_shp@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf' // 使用nginx转发
+              'http://192.168.192.128/geoserver/gwc/service/tms/1.0.0/beijingmap%3Abeijingmap@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf'
+              // 'http://192.168.192.128/geoserver/gwc/service/tms/1.0.0/beijing_test%3Abeijing_shp@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf' // 使用nginx转发
             ]
           }
         },
@@ -180,18 +183,18 @@ export default {
         }
       })
 
-      //   map.addLayer({
-      //     id: "3d-buildings",
-      //     source: "beijingSource",
-      //     "source-layer": "buildings",
-      //     type: "fill-extrusion",
-      //     minzoom: 12,
-      //     paint: {
-      //       "fill-extrusion-color": "#dfdcd7",
-      //       "fill-extrusion-opacity": 1,
-      //       "fill-extrusion-height": 50,
-      //     },
-      //   });
+      // map.addLayer({
+      //   id: "3d-buildings",
+      //   source: "beijingSource",
+      //   "source-layer": "buildings",
+      //   type: "fill-extrusion",
+      //   minzoom: 12,
+      //   paint: {
+      //     "fill-extrusion-color": "#dfdcd7",
+      //     "fill-extrusion-opacity": 1,
+      //     "fill-extrusion-height": 50,
+      //   },
+      // });
 
       // --------------- poi
       map.addLayer({
