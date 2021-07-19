@@ -5,6 +5,9 @@ module.exports = {
       // '/geoserver': {
       //   target: 'http://localhost:8080'
       // },
+      // '/tile': {
+      //   target: 'http://localhost:3000'
+      // },
       '/cdn': {
         target: 'http://192.168.192.128'
       }

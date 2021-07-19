@@ -26,6 +26,10 @@ const routes = [
   {
     path: '/beijing',
     component: () => import('../views/BeijingMap.vue')
+  },
+  {
+    path: '/mbview',
+    component: () => import('../views/MBtiles.vue')
   }
 ]
 
