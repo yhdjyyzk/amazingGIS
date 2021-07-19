@@ -7,7 +7,7 @@
     116,
     38
   ],
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=R8rAisQ0L6EL1wW8JVYQ",
+  "glyphs": "http://localhost:3000/static/map/style/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -5188,8 +5188,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -5225,8 +5224,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -5262,8 +5260,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -5332,8 +5329,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "{subclass}_11",
@@ -5409,8 +5405,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "{class}_11",
@@ -5470,8 +5465,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "{class}_11",
@@ -5530,8 +5524,7 @@
       "layout": {
         "icon-size": 0.9,
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "{class}_11",
@@ -5577,8 +5570,7 @@
       "layout": {
         "icon-size": 0.9,
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "{class}_11",
@@ -5709,8 +5701,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "base": 1,
@@ -5766,7 +5757,7 @@
       "layout": {
         "icon-size": 1,
         "text-font": [
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 10,
         "icon-image": "road_{ref_length}",
@@ -5820,7 +5811,7 @@
       "layout": {
         "icon-size": 1,
         "text-font": [
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 9,
         "icon-image": "{network}_{ref_length}",
@@ -5879,7 +5870,7 @@
       "layout": {
         "icon-size": 1,
         "text-font": [
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 9,
         "icon-image": "{network}_{ref_length}",
@@ -5925,7 +5916,7 @@
       "layout": {
         "icon-size": 1,
         "text-font": [
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 12,
         "icon-image": "airport_11",
@@ -5962,8 +5953,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Medium",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6005,8 +5995,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "base": 1.2,
@@ -6050,8 +6039,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "base": 1.2,
@@ -6092,8 +6080,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Regular",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "base": 1.2,
@@ -6152,8 +6139,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Medium",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "base": 1.2,
@@ -6214,8 +6200,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Medium",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6263,8 +6248,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6314,8 +6298,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6365,8 +6348,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6416,8 +6398,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": {
           "stops": [
@@ -6461,8 +6442,7 @@
       ],
       "layout": {
         "text-font": [
-          "Roboto Condensed Italic",
-          "Noto Sans Italic"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 13,
         "text-field": "{name:latin}",
@@ -6483,7 +6463,7 @@
       "layout": {
         "text-font": [
           "Roboto Medium",
-          "Noto Sans Regular"
+          "KlokanTech Noto Sans Regular"
         ],
         "text-size": 10,
         "text-field": "{housenumber}"
@@ -6493,12 +6473,12 @@
       "source-layer": "housenumber"
     }
   ],
-  "sprite": "https://api.maptiler.com/maps/streets/sprite",
+  "sprite": "http://localhost:3000/static/map/style/sprite",
   "bearing": 0,
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "http://localhost:8082/static/map/style/spec.json"
+      "url": "http://localhost:3000/static/map/style/spec.json"
     }
   },
   "version": 8,

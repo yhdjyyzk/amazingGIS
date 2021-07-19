@@ -2,12 +2,13 @@ const path = require('path');
 const Koa = require('koa');
 const Router = require('@koa/router');
 const cors = require('koa2-cors');
+const staticMiddleWare = require('koa-static');
 const MBTiles = require('@mapbox/mbtiles');
 
 const router = new Router();
 let mbtiles = null;
 
-new MBTiles(path.resolve(__dirname, "../data/china.mbtiles"), (err, mb) => {
+new MBTiles(path.resolve(__dirname, "../../../../../tiles/china.mbtiles"), (err, mb) => {
   mbtiles = mb;
 });
 
@@ -28,6 +29,8 @@ router.get('/tile/:z/:x/:y.pbf', async (ctx, next) => {
   const { x, y, z } = ctx.params;
   const data = await getTile(x, y, z);
 
+  console.log(`INFO: Get ${x}_${y}_${z}.`);
+
   ctx.body = data;
 
   ctx.set('content-encoding', 'gzip')
@@ -42,7 +45,7 @@ app.use(
   cors({
     origin: function (ctx) { //设置允许来自指定域名请求
       // if (ctx.url === '/tile') {
-        return '*'; // 允许来自所有域名请求
+      return '*'; // 允许来自所有域名请求
       // }
     },
     maxAge: 500000000000, //指定本次预检请求的有效期，单位为秒。
@@ -53,6 +56,10 @@ app.use(
   })
 );
 
+app.use(staticMiddleWare(path.resolve(__dirname, '../public/')));
+
 app.use(router.routes());
 
 app.listen(3000);
+
+console.log("INFO: listen on port 3000.");

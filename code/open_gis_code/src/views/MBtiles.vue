@@ -14,7 +14,8 @@ export default {
   mounted() {
     const map = new mapboxgl.Map({
       container: this.$refs.map,
-      style: '/static/map/style/style.json',
+      // style: '/static/map/style/style.json',
+      style: 'http://localhost:3000/static/map/style/style.json',
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
       zoom: 16, // starting zoom
     });
