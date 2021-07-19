@@ -26,3 +26,4 @@
 
 * [使用GeoServer 和 mapbox-gl 搭建离线地图服务](https://zhuanlan.zhihu.com/p/203756597)  
   ./code/geoserver_learn Map.vue
+* [如何自制全国 MBTiles 并渲染](https://zhuanlan.zhihu.com/p/390797186)
