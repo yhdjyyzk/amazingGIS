@@ -23,6 +23,7 @@
 7. [地图建筑建模制作与输出](https://zhuanlan.zhihu.com/p/150257820)
 8. [地理数据可视化](https://zhuanlan.zhihu.com/p/158706718)
 9. [地图酷炫效果和原理揭秘](https://zhuanlan.zhihu.com/p/163592043)
+10. [WebGL 渲染管线在 Web3D 地图中的应用](https://zhuanlan.zhihu.com/p/392415003)
 
 * [使用GeoServer 和 mapbox-gl 搭建离线地图服务](https://zhuanlan.zhihu.com/p/203756597)  
   ./code/geoserver_learn Map.vue
