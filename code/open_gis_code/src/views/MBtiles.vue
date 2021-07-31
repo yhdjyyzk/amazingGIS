@@ -17,7 +17,7 @@ export default {
       // style: '/static/map/style/style.json',
       style: 'http://localhost:3000/static/map/style/style.json',
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
-      zoom: 16, // starting zoom
+      zoom: 10, // starting zoom
     });
   }
 };

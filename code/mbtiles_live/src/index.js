@@ -8,7 +8,7 @@ const MBTiles = require('@mapbox/mbtiles');
 const router = new Router();
 let mbtiles = null;
 
-new MBTiles(path.resolve(__dirname, "../../../../../tiles/china.mbtiles"), (err, mb) => {
+new MBTiles(path.resolve(__dirname, "../../../../../tiles/china_with_water.mbtiles"), (err, mb) => {
   mbtiles = mb;
 });
 

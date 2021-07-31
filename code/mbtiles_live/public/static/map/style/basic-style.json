@@ -16,6 +16,7 @@
     }
   },
   "glyphs": "http://localhost:3000/static/map/style/fonts/{fontstack}/{range}.pbf",
+  "sprite": "http://localhost:3000/static/map/style/sprite",
   "layers": [
     {
       "id": "background",
