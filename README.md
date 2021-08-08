@@ -23,6 +23,7 @@
 8. [地理数据可视化](https://zhuanlan.zhihu.com/p/158706718)
 9. [地图酷炫效果和原理揭秘](https://zhuanlan.zhihu.com/p/163592043)
 10. [WebGL 渲染管线在 Web3D 地图中的应用](https://zhuanlan.zhihu.com/p/392415003)
+11. [Web 3D地图中CPU和GPU动画的实现](https://zhuanlan.zhihu.com/p/397070898)
 
 #### 工程
 1. [使用GeoServer 和 mapbox-gl 搭建离线地图服务](https://zhuanlan.zhihu.com/p/203756597)  
