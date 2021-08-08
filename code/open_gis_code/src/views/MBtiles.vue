@@ -5,22 +5,23 @@
 </template>
 
 <script>
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+import mapboxgl from 'mapbox-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {},
-  mounted() {
+  mounted () {
     const map = new mapboxgl.Map({
       container: this.$refs.map,
       // style: '/static/map/style/style.json',
-      style: 'http://localhost:3000/static/map/style/style.json',
+      style: 'http://localhost:3000/static/map/style/night-style.json',
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
       zoom: 10, // starting zoom
-    });
+      antialias: true
+    })
   }
-};
+}
 </script>
 
 <style>
