@@ -11,6 +11,7 @@
 * [tippecanoe](https://github.com/mapbox/tippecanoe) 从大规模 `GeoJSON`, `Geobuf`, 或者 `CSV` 要素创建矢量瓦片 (`vector tilesets`)  
 * [tilemaker](https://github.com/systemed/tilemaker)  使用 `OSM` 的 `.osm.pbf` 文件创建 `mbtiles`  
 * [vector-tile-js](https://github.com/mapbox/vector-tile-js)解析 `vector-tile` 瓦片  
+* [Nominatim](https://github.com/osm-search/Nominatim)  开源的地址解析与逆地址解析工具
 
 #### 系列文章
 1. [用60秒浓缩我们在3D地图可视化倾注的热爱](https://zhuanlan.zhihu.com/p/172213877)
