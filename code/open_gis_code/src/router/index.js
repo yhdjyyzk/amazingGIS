@@ -30,6 +30,14 @@ const routes = [
   {
     path: '/mbview',
     component: () => import('../views/MBtiles.vue')
+  },
+  {
+    path: '/building',
+    component: () => import('../views/MBtilesBuilding.vue')
+  },
+  {
+    path: '/world',
+    component: () => import('../views/MBtilesWorld.vue')
   }
 ]
 
