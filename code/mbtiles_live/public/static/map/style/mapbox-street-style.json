@@ -205,23 +205,6 @@
       }
     },
     {
-      "id": "building",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "building",
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "rgba(222, 211, 190, 1)",
-        "fill-opacity": {"base": 1, "stops": [[13, 0], [15, 1]]},
-        "fill-outline-color": {
-          "stops": [
-            [15, "rgba(212, 177, 146, 0)"],
-            [16, "rgba(212, 177, 146, 0.5)"]
-          ]
-        }
-      }
-    },
-    {
       "id": "housenumber",
       "type": "symbol",
       "source": "openmaptiles",
