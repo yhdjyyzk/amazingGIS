@@ -13,5 +13,12 @@ module.exports = {
       }
     }
   },
-  lintOnSave: false
+  lintOnSave: false,
+  chainWebpack: config => {
+    config.module
+      .rule('glsl')
+      .test(/\.(glsl|vs|fs)$/)
+      .use('glsl')
+      .loader('webpack-glsl-loader')
+  }
 }

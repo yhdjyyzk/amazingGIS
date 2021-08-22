@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import threeRouter from './three'
 
 Vue.use(VueRouter)
 
@@ -38,7 +39,8 @@ const routes = [
   {
     path: '/world',
     component: () => import('../views/MBtilesWorld.vue')
-  }
+  },
+  ...threeRouter
 ]
 
 const router = new VueRouter({
