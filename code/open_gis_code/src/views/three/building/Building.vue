@@ -25,9 +25,9 @@ export default {
         'http://localhost:3000/static/map/style/night-style-no-building.json',
       center: [116.44112528833665, 39.9293], // starting position [lng, lat]
       // center: [0, 0],
-      // pitch: 45,
-      // bearing: -45,
-      zoom: 5, // starting zoom
+      pitch: 45,
+      bearing: -45,
+      zoom: 14, // starting zoom
       antialias: true
     })
 
@@ -69,12 +69,12 @@ export default {
       function animate () {
         requestAnimationFrame(animate)
 
-        if (self.hemisphere) {
-          self.hemisphere.update({
-            time: performance.now()
-          })
-          map.triggerRepaint() // 必须调用重绘
-        }
+        // if (self.hemisphere) {
+        //   self.hemisphere.update({
+        //     time: performance.now()
+        //   })
+        //   map.triggerRepaint() // 必须调用重绘
+        // }
       }
 
       animate()
@@ -128,27 +128,27 @@ export default {
           })
 
           // --------------------------
-          self.hemisphere = new Hemisphere({
-            tb,
-            lnglat: [116.44112528833665, 39.9293]
-          })
+          // self.hemisphere = new Hemisphere({
+          //   tb,
+          //   lnglat: [116.44112528833665, 39.9293]
+          // })
 
-          tb.add(self.hemisphere.getModel())
+          // tb.add(self.hemisphere.getModel())
 
-          setTimeout(() => {
-            map.easeTo({
-              zoom: 16,
-              duration: 5000
-            })
+          // setTimeout(() => {
+          //   map.easeTo({
+          //     zoom: 16,
+          //     duration: 5000
+          //   })
 
-            setTimeout(() => {
-              map.easeTo({
-                pitch: 45,
-                bearing: 45,
-                duration: 5000
-              })
-            }, 5200)
-          }, 3000)
+          //   setTimeout(() => {
+          //     map.easeTo({
+          //       pitch: 45,
+          //       bearing: 45,
+          //       duration: 5000
+          //     })
+          //   }, 5200)
+          // }, 3000)
         },
 
         render: function (gl, matrix) {
