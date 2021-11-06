@@ -104,3 +104,7 @@ dist
 .tern-port
 
 *.mbtiles
+
+.DS_Store
+
+.idea
