@@ -12,6 +12,9 @@
 * [tilemaker](https://github.com/systemed/tilemaker)  使用 `OSM` 的 `.osm.pbf` 文件创建 `mbtiles`  
 * [vector-tile-js](https://github.com/mapbox/vector-tile-js)解析 `vector-tile` 瓦片  
 * [Nominatim](https://github.com/osm-search/Nominatim)  开源的地址解析与逆地址解析工具
+* [RoboSat](https://github.com/mapbox/robosat)  从航拍、卫星等影像中识别不同类型的feature，并生成 geojson
+* [martini](https://github.com/mapbox/martini)  从高程数据生成地形网格
+* [delatin](https://github.com/mapbox/delatin)  一个快速的JavaScript 3D 地形网格生成工具
 
 #### 系列文章
 1. [用60秒浓缩我们在3D地图可视化倾注的热爱](https://zhuanlan.zhihu.com/p/172213877)
