@@ -37,4 +37,4 @@
 #### 数据下载
 由于数据不合规，所以仅供研究学习，禁止部署于互联网。
 - [中国大陆部分数据](https://www.aliyundrive.com/s/bADcdkdVVWw)
-- [台湾省部分数据](https://www.aliyundrive.com/s/4wnHse2rzoh)
+- [中国台湾省部分数据](https://www.aliyundrive.com/s/4wnHse2rzoh)
