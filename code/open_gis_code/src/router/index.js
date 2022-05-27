@@ -40,6 +40,14 @@ const routes = [
     path: '/world',
     component: () => import('../views/MBtilesWorld.vue')
   },
+  {
+    path:'/cesium',
+    component:() => import('../views/cesium/CesiumHello.vue')
+  },
+  {
+    path:'/cesiumvt',
+    component:() => import('../views/cesium/CesiumPBFView.vue')
+  },
   ...threeRouter
 ]
 

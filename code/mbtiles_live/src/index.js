@@ -4,11 +4,12 @@ const Router = require('@koa/router');
 const cors = require('koa2-cors');
 const staticMiddleWare = require('koa-static');
 const MBTiles = require('@mapbox/mbtiles');
+const dayjs = require('dayjs');
 
 const router = new Router();
 let mbtiles = null;
 
-new MBTiles(path.resolve(__dirname, "../../../../../tiles/china_with_water.mbtiles"), (err, mb) => {
+new MBTiles(path.resolve(__dirname, "../../../mapdata/china.mbtiles"), (err, mb) => {
   mbtiles = mb;
 });
 
@@ -25,16 +26,20 @@ function getTile (x, y, z) {
   })
 }
 
+function getNow() {
+    return dayjs().format("YYYY-MM-DD HH:mm:ss:SSS");
+}
+
 router.get('/tile/:z/:x/:y.pbf', async (ctx, next) => {
   const { x, y, z } = ctx.params;
   const data = await getTile(x, y, z);
 
-  console.log(`INFO: Get ${x}_${y}_${z}.`);
+  console.log(`INFO: ${getNow()}. Get ${x}_${y}_${z}.`);
 
   ctx.body = data;
 
-  ctx.set('content-encoding', 'gzip')
-  ctx.set('content-type', 'application/x-protobuf')
+  ctx.set('content-encoding', 'gzip');
+  ctx.set('content-type', 'application/x-protobuf');
 
   return next();
 });
@@ -57,9 +62,11 @@ app.use(
 );
 
 app.use(staticMiddleWare(path.resolve(__dirname, '../public/')));
+app.use(staticMiddleWare(path.resolve(__dirname, '../../../')));
 
 app.use(router.routes());
 
 app.listen(3000);
 
-console.log("INFO: listen on port 3000.");
+console.log(`INFO: ${getNow()}. 启动矢量瓦片引擎.`);
+console.log(`INFO: ${getNow()}. listen on port 3000.`);

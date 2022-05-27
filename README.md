@@ -15,6 +15,7 @@
 * [RoboSat](https://github.com/mapbox/robosat)  从航拍、卫星等影像中识别不同类型的feature，并生成 geojson
 * [martini](https://github.com/mapbox/martini)  从高程数据生成地形网格
 * [delatin](https://github.com/mapbox/delatin)  一个快速的JavaScript 3D 地形网格生成工具
+* [geojson-mapnikify])(https://github.com/mapbox/geojson-mapnikify) 将 `mapbox style json` 转换为 `mapnik style xml`
 
 #### 系列文章
 1. [用60秒浓缩我们在3D地图可视化倾注的热爱](https://zhuanlan.zhihu.com/p/172213877)
@@ -38,3 +39,8 @@
 由于数据不合规，所以仅供研究学习，禁止部署于互联网。
 - [中国大陆部分数据](https://www.aliyundrive.com/s/bADcdkdVVWw)
 - [中国台湾省部分数据](https://www.aliyundrive.com/s/4wnHse2rzoh)
+
+#### 使用
+- 在此目录下新建 `mapdata` 文件夹
+- 将下载的数据放入该文件夹下
+- 分别启动 `mbtiles_live` 和 `open_gis_code`
