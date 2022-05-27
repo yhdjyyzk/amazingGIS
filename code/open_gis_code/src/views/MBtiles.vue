@@ -101,6 +101,7 @@ export default {
   }
 
   .panel {
+    color: white;
     width: 300px;
     position: absolute;
     z-index: 100000;
