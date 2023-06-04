@@ -17,6 +17,7 @@
 * [delatin](https://github.com/mapbox/delatin)  一个快速的JavaScript 3D 地形网格生成工具
 * [geojson-mapnikify](https://github.com/mapbox/geojson-mapnikify) 将 `mapbox style json` 转换为 `mapnik style xml`
 * [mapsplit](https://github.com/simonpoole/mapsplit) 分割地图瓦片数据
+* [libpostal](https://github.com/openvenues/libpostal) 开源地址解析工具 
 
 #### 系列文章
 1. [用60秒浓缩我们在3D地图可视化倾注的热爱](https://zhuanlan.zhihu.com/p/172213877)
