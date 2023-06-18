@@ -14,7 +14,8 @@
   "dependencies": {
     "@vueuse/core": "^10.1.2",
     "element-plus": "^2.3.6",
-    "mapbox-gl": "^2.15.0",
+    "less": "^4.1.3",
+    "mapbox-gl": "1.13.2",
     "pinia": "^2.0.36",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
