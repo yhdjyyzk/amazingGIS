@@ -15,7 +15,7 @@ export default {
     const map = new mapboxgl.Map({
       container: this.$refs.map,
       // style: '/static/map/style/style.json',
-      style: 'http://localhost:3000/static/map/style/street-style.json',
+      style: 'http://localhost:9001/static/map/style/street-style.json',
       center: [116.45911895415747, 39.90799060367809], // starting position [lng, lat]
       zoom: 15,
       pitch: 60,

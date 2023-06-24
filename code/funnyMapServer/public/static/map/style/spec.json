@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"scheme": "xyz",
 	"tiles": [
-        "http://localhost:3000/tile/{z}/{x}/{y}.pbf"
+        "http://localhost:9001/tile/{z}/{x}/{y}.pbf"
 	],
 	"minzoom": 0,
 	"maxzoom": 14

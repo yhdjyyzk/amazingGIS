@@ -2,10 +2,10 @@
   "name": "mbtiles_live",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js"
+    "start": "npx pm2 start ./ecosystem.config.js"
   },
   "author": "",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "dayjs": "^1.10.7",
     "koa": "^2.13.1",
     "koa-static": "^5.0.0",
-    "koa2-cors": "^2.0.6"
+    "koa2-cors": "^2.0.6",
+    "pm2": "^5.3.0"
   }
 }

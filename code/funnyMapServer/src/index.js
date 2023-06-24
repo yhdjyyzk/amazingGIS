@@ -9,7 +9,7 @@ const dayjs = require('dayjs');
 const router = new Router();
 let mbtiles = null;
 
-new MBTiles(path.resolve(__dirname, "../../../mapdata/china_1.mbtiles"), (err, mb) => {
+new MBTiles(path.resolve(__dirname, "../../../mapdata/data/mbtiles/china_water.mbtiles"), (err, mb) => {
   mbtiles = mb;
 });
 
@@ -66,7 +66,7 @@ app.use(staticMiddleWare(path.resolve(__dirname, '../../../')));
 
 app.use(router.routes());
 
-app.listen(3000);
+app.listen(9001);
 
 console.log(`INFO: ${getNow()}. 启动矢量瓦片引擎.`);
-console.log(`INFO: ${getNow()}. listen on port 3000.`);
+console.log(`INFO: ${getNow()}. listen on port 9001.`);

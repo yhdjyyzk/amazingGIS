@@ -109,4 +109,9 @@ dist
 
 .idea
 
-mapdata/data
+# map data
+mapdata/data/china_terrain_30m_11level
+mapdata/data/pbf/coastline
+*.mbtiles
+*.pbf
+.tmp

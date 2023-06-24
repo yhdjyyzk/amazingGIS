@@ -22,7 +22,7 @@ export default {
       container: this.$refs.map,
       // style: '/static/map/style/style.json',
       style:
-        'http://localhost:3000/static/map/style/night-style-no-building.json',
+        'http://localhost:9001/static/map/style/night-style-no-building.json',
       center: [116.44112528833665, 39.9293], // starting position [lng, lat]
       // center: [0, 0],
       pitch: 45,
@@ -38,7 +38,7 @@ export default {
     map.on('load', (e) => {
       map.addSource('world_geojson', {
         type: 'geojson',
-        data: 'http://localhost:3000/static/geojson/world.json'
+        data: 'http://localhost:9001/static/geojson/world.json'
       })
 
       map.addLayer({
@@ -116,7 +116,7 @@ export default {
           window.tb.add(cube)
 
           const jsonRes = await fetch(
-            'http://localhost:3000/static/geojson/chaoyang_building.json'
+            'http://localhost:9001/static/geojson/chaoyang_building.json'
           )
           const json = await jsonRes.json()
 

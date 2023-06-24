@@ -31,7 +31,7 @@ export default {
 
       // 1.
       imageryProvider: new MVTImageryProvider({
-        style: styleJSON, //"http://localhost:3000/static/map/style/night-style.json",
+        style: styleJSON, //"http://localhost:9001/static/map/style/night-style.json",
       }),
     });
 

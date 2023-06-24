@@ -15,7 +15,7 @@ export default {
     const map = new mapboxgl.Map({
       container: this.$refs.map,
       // style: '/static/map/style/style.json',
-      style: 'http://localhost:3000/static/map/style/night-style.json',
+      style: 'http://localhost:9001/static/map/style/night-style.json',
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
       zoom: 3, // starting zoom
       antialias: true
@@ -24,7 +24,7 @@ export default {
     map.on('load', (e) => {
       map.addSource('world_geojson', {
         type: 'geojson',
-        data: 'http://localhost:3000/static/geojson/world.json'
+        data: 'http://localhost:9001/static/geojson/world.json'
       })
 
       map.addLayer({

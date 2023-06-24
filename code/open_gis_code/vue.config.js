@@ -15,13 +15,13 @@ module.exports = {
       //   target: 'http://localhost:8080'
       // },
       // '/tile': {
-      //   target: 'http://localhost:3000'
+      //   target: 'http://localhost:9001'
       // },
       '/mapdata': {
-        target: 'http://localhost:3000'
+        target: 'http://localhost:9001'
       },
       '/static': {
-        target: 'http://localhost:3000'
+        target: 'http://localhost:9001'
       },
       '/cdn': {
         target: 'http://192.168.192.128'

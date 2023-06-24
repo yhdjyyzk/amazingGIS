@@ -63,7 +63,7 @@ export default {
   },
   watch: {
     style() {
-      this.$map.setStyle(`http://localhost:3000${this.style}`);
+      this.$map.setStyle(`http://localhost:9001${this.style}`);
     },
   },
   mounted() {
@@ -71,7 +71,7 @@ export default {
       container: this.$refs.map,
       // style: '/static/map/style/style.json',
       style:
-        "http://localhost:3000/static/map/style/fiord-color-gl-style/fiord-color-gl-style.json",
+        "http://localhost:9001/static/map/style/fiord-color-gl-style/fiord-color-gl-style.json",
       center: [116.391229827904, 39.907092084593216], // starting position [lng, lat]
       zoom: this.zoom, // starting zoom
       antialias: true,

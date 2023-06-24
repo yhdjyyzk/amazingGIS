@@ -6,7 +6,7 @@
 		"poi":              { "minzoom": 12, "maxzoom": 14 },
 		"poi_detail":       { "minzoom": 14, "maxzoom": 14, "write_to": "poi"},
 
-		"housenumber":      { "minzoom": 14, "maxzoom": 14 },
+		"housenumber":      { "minzoom": 13, "maxzoom": 14 },
 
 		"waterway":         { "minzoom":  0,  "maxzoom": 14, "simplify_below": 12, "simplify_level": 0.0003, "simplify_ratio": 2 },
 		"waterway_detail":  { "minzoom": 0,  "maxzoom": 14, "write_to": "waterway" },
@@ -19,7 +19,7 @@
 		"building":          { "minzoom": 12, "maxzoom": 14 },
 
 		"water":             { "minzoom": 0,  "maxzoom": 14, "simplify_below": 12, "simplify_level": 0.0003, "simplify_ratio": 2},
-		"ocean":             { "minzoom": 0,  "maxzoom": 14, "source": "coastline/water_polygons.shp", "simplify_below": 13, "simplify_level": 0.0001, "simplify_ratio": 2, "write_to": "water", "index": true },
+		"ocean":             { "minzoom": 0,  "maxzoom": 14, "source": "./srv/coastline/water_polygons.shp", "simplify_below": 13, "simplify_level": 0.0001, "simplify_ratio": 2, "write_to": "water", "index": true },
 		"water_name":        { "minzoom": 0, "maxzoom": 14 },
 		"water_name_detail": { "minzoom": 0, "maxzoom": 14, "write_to": "water_name" },
 
@@ -27,10 +27,10 @@
 		"aerodrome_label":   { "minzoom": 0, "maxzoom": 14 },
 		"park":              { "minzoom": 0, "maxzoom": 14 },
 		"landuse":           { "minzoom":  0, "maxzoom": 14, "simplify_below": 13, "simplify_level": 0.0003, "simplify_ratio": 2 },
-		"urban_areas":       { "minzoom":  0, "maxzoom":  8, "source": "landcover/ne_10m_urban_areas/ne_10m_urban_areas.shp", "source_columns": ["featurecla"], "simplify_below": 7, "simplify_level": 0.0003, "simplify_ratio": 2, "write_to": "landuse" },
+		"urban_areas":       { "minzoom":  0, "maxzoom":  8, "source": "./srv/landcover/ne_10m_urban_areas/ne_10m_urban_areas.shp", "source_columns": ["featurecla"], "simplify_below": 7, "simplify_level": 0.0003, "simplify_ratio": 2, "write_to": "landuse" },
 		"landcover":         { "minzoom":  0, "maxzoom": 14, "simplify_below": 13, "simplify_level": 0.0003, "simplify_ratio": 2 },
-		"ice_shelf":         { "minzoom":  0, "maxzoom":  9, "source": "landcover/ne_10m_antarctic_ice_shelves_polys/ne_10m_antarctic_ice_shelves_polys.shp", "source_columns": ["featurecla"], "simplify_below": 13, "simplify_level": 0.0005, "write_to": "landcover" },
-		"glacier":           { "minzoom":  0, "maxzoom":  9, "source": "landcover/ne_10m_glaciated_areas/ne_10m_glaciated_areas.shp", "source_columns": ["featurecla"], "simplify_below": 13, "simplify_level": 0.0005, "write_to": "landcover" },
+		"ice_shelf":         { "minzoom":  0, "maxzoom":  9, "source": "./srv/landcover/ne_10m_antarctic_ice_shelves_polys/ne_10m_antarctic_ice_shelves_polys.shp", "source_columns": ["featurecla"], "simplify_below": 13, "simplify_level": 0.0005, "write_to": "landcover" },
+		"glacier":           { "minzoom":  0, "maxzoom":  9, "source": "./srv/landcover/ne_10m_glaciated_areas/ne_10m_glaciated_areas.shp", "source_columns": ["featurecla"], "simplify_below": 13, "simplify_level": 0.0005, "write_to": "landcover" },
 		"mountain_peak":     { "minzoom": 0, "maxzoom": 14 }
 	},
 	"settings": {

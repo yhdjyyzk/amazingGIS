@@ -1,7 +1,7 @@
 {
   "id": "streets",
-  "glyphs": "http://localhost:3000/static/map/style/fonts/{fontstack}/{range}.pbf",
-  "sprite": "http://localhost:3000/static/map/style/sprite",
+  "glyphs": "http://localhost:9001/static/map/style/fonts/{fontstack}/{range}.pbf",
+  "sprite": "http://localhost:9001/static/map/style/sprite",
   "transition": {
     "duration": 300,
     "delay": 0
@@ -6445,7 +6445,7 @@
   "bearing": 0,
   "sources": {
     "openmaptiles": {
-      "url": "http://localhost:3000/static/map/style/spec.json",
+      "url": "http://localhost:9001/static/map/style/spec.json",
       "type": "vector"
     }
   },

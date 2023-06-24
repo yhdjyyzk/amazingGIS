@@ -24,11 +24,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "http://localhost:3000/static/map/style/spec.json"
+      "url": "http://localhost:9001/static/map/style/spec.json"
     }
   },
-  "sprite": "http://localhost:3000/static/map/style/sprite",
-  "glyphs": "http://localhost:3000/static/map/style/fonts/{fontstack}/{range}.pbf",
+  "sprite": "http://localhost:9001/static/map/style/sprite",
+  "glyphs": "http://localhost:9001/static/map/style/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",

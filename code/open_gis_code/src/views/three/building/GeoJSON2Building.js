@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { GPS } from '../../../utils/geo'
 
 const loader = new THREE.TextureLoader()
-const texture = loader.load('http://localhost:3000/static/images/building.png')
+const texture = loader.load('http://localhost:9001/static/images/building.png')
 const sideMaterial = new THREE.MeshLambertMaterial({
   transparent: true,
   map: texture
