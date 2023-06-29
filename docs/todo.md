@@ -1,4 +1,5 @@
-- [ ] pm2, nginx 部署
+- [ ] client, server pm2, nginx 部署
+- [x] maputnik nginx 部署
 - [ ] 预览样式
 - [ ] 服务端存储样式
 - [ ] docker 部署
