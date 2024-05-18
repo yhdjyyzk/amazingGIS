@@ -15,9 +15,10 @@ export default defineComponent({
     onMounted(() => {
       map = new mapboxgl.Map({
         container: el.value,
-        style: 'http://localhost:9001/static/map/style/osm_liberty2.json',
-        center: [110, 31],
-        zoom: 3.5,
+        style: 'http://localhost:9001/static/map/styles/colorful.json',
+        // center: [110, 31], // taiwan
+        center: [116, 39], // beijing
+        zoom: 5,
         antialias: true
       })
     })

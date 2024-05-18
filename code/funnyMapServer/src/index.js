@@ -9,7 +9,7 @@ const dayjs = require('dayjs');
 const router = new Router();
 let mbtiles = null;
 
-new MBTiles(path.resolve(__dirname, "../../../mapdata/data/mbtiles/china_water.mbtiles"), (err, mb) => {
+new MBTiles(path.resolve(__dirname, "../../../mapdata/data/mbtiles/china-shortbread-1.0.mbtiles"), (err, mb) => {
   mbtiles = mb;
 });
 
