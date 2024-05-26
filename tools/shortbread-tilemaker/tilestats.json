@@ -1,0 +1,111 @@
+{
+    "tilestats": {
+        "layerCount": 26,
+        "layers": [
+            {
+                "layer": "place_labels",
+                "geometry": "Point"
+            },
+            {
+                "layer": "boundaries",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "boundary_labels",
+                "geometry": "Point"
+            },
+            {
+                "layer": "addresses",
+                "geometry": "Point"
+            },
+            {
+                "layer": "water_lines",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "water_lines_labels",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "dam_lines",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "dam_polygons",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "pier_lines",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "pier_polygons",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "bridges",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "street_polygons",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "streets_polygons_labels",
+                "geometry": "Point"
+            },
+            {
+                "layer": "ferries",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "streets",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "street_labels",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "street_labels_points",
+                "geometry": "Point"
+            },
+            {
+                "layer": "aerialways",
+                "geometry": "LineString"
+            },
+            {
+                "layer": "public_transport",
+                "geometry": "Point"
+            },
+            {
+                "layer": "buildings",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "water_polygons",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "ocean",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "water_polygons_labels",
+                "geometry": "Point"
+            },
+            {
+                "layer": "land",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "sites",
+                "geometry": "Polygon"
+            },
+            {
+                "layer": "pois",
+                "geometry": "Point"
+            }
+        ]
+    }
+}
